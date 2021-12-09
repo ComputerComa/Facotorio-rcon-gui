@@ -1,0 +1,1 @@
+[[sg.Text(text="Ban:"), sg.InputText(size=(15, None), tooltip="Name of the Player to Ban", key="-BAN-NAME-"), sg.Button(button_text="Ban", key="-BTN-BAN-PLAYER-")]]
