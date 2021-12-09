@@ -13,7 +13,7 @@ def rconcreate(IP_ADDR: str, SRV_PORT: int, SRV_Password: str) -> factorio_rcon.
     client = factorio_rcon.RCONClient(IP_ADDR, SRV_PORT, SRV_Password)
     return client
 sg.theme('Dark')
-main_layout = [[sg.Frame("Connections Settings", [[sg.Text(text="Server IP:", size=(20, None), auto_size_text=True, justification="center"), sg.InputText(default_text="192.168.1.1", size=(25, None), justification="center", tooltip="Server IP", key="-SRVIP-"), sg.Text(text="Port:", auto_size_text=True, justification="center"), sg.InputText(default_text="25575", size=(25, None), justification="center", tooltip="RCON Port", key="-SRV-PRT-"), sg.Text(text="Password:", auto_size_text=True, justification="center"), sg.InputText(password_char="*", justification="center", tooltip="Rcon Password", key="-SRV-PASS-"), sg.Button(button_text="Connect", key="-BTN-CONNCT-"), sg.Button(button_text="Disconnect", key="-BTN-D-CONNCT-")]], element_justification="center")], [sg.Column([[sg.Output(size=(None, 15))]]), sg.Column([[sg.Text(text="Command"), sg.InputText(size=(25, None), key="-CMD-INPT-"), sg.Button(button_text="Send", key="-BTN-SBMT-CMD-")], [sg.Text(text="Chat", size=(8, None), justification="center"), sg.InputText(size=(24, None), key="-CHAT-INPUT-"), sg.Button(button_text="Send", key="-BTN-SBMT-MSG-")]]), sg.Column([[sg.Frame("Quick Commands", [[sg.Button(button_text="Players", key="-BTN-PLAYERS-"), sg.Button(button_text="Admins", key="-BTN-ADMINS-"), sg.Button(button_text="Server Save", key="-BTN-SERVER-SAVE-"), sg.Button(button_text="Stop Server", key="-STOP-SERVER-")], [sg.Button(button_text="Kick Player", key="-BTN-KICK-"), sg.Button(button_text="Ban Player", key="-BTN-BAN-"), sg.Button(button_text="Unban Player", key="-BTN-UNBAN-")], [sg.Text(text="Player: "), sg.InputText(size=(20, None), tooltip="Player Name", key="-PLAYER-ID-")]], element_justification="Center")]])]]
+main_layout = [[sg.Frame("Connections Settings", [[sg.Text(text="Server IP:", size=(20, None), auto_size_text=True, justification="center"), sg.InputText(default_text="192.168.1.1", size=(25, None), justification="center", tooltip="Server IP", key="-SRVIP-"), sg.Text(text="Port:", auto_size_text=True, justification="center"), sg.InputText(default_text="25575", size=(25, None), justification="center", tooltip="RCON Port", key="-SRV-PRT-"), sg.Text(text="Password:", auto_size_text=True, justification="center"), sg.InputText(password_char="*", justification="center", tooltip="Rcon Password", key="-SRV-PASS-"), sg.Button(button_text="Connect", key="-BTN-CONNCT-"), sg.Button(button_text="Disconnect", key="-BTN-D-CONNCT-")]], element_justification="center")], [sg.Column([[sg.Output(size=(None, 15))]]), sg.Column([[sg.Frame("Quick Commands", [[sg.Button(button_text="Players", key="-BTN-PLAYERS-"), sg.Button(button_text="Admins", key="-BTN-ADMINS-"), sg.Button(button_text="Server Save", key="-BTN-SERVER-SAVE-"), sg.Button(button_text="Stop Server", key="-STOP-SERVER-")]], element_justification="Center")], [sg.Frame("Admin Commands", [[sg.Button(button_text="Purge Player", key="-BTN-PURGE-"), sg.Button(button_text="Kick Player", key="-BTN-KICK-"), sg.Button(button_text="Ban Player", key="-BTN-BAN-"), sg.Button(button_text="Unban Player", key="-BTN-UNBAN-")], [sg.Button(button_text="Promote Player", key="-BTN-PROMOTE-"), sg.Button(button_text="Mute Player", key="-BTN-MUTE-"), sg.Button(button_text="Ignore Player", key="-BTN-IGNORE-")], [sg.Button(button_text="Demote Player", key="-BTN-DEMOTE-"), sg.Button(button_text="Unmute Player", key="-BTN-UNMUTE-"), sg.Button(button_text="Unignore Player", key="-BTN-UNIGNORE-")], [sg.Text(text="Player:"), sg.InputText(size=(20, None), tooltip="Player Name", key="-PLAYER-ID-")]], element_justification="center")], [sg.Frame("Other Commands", [[sg.Text(text="Command"), sg.InputText(default_text=None, tooltip="Command to execute", key="-CMD-INPT-"), sg.Button(button_text="Submit", key="-BTN-SBMT-CMD-")], [sg.Text(text="Chat"), sg.InputText(tooltip="Chat to send", key="-CHAT-INPUT-"), sg.Button(button_text="Send Chat", key="-BTN-SBMT-MSG-")]], element_justification="center")]], element_justification="center")]]
 ## TODO
 # kick_layout 
 # ban layout
@@ -148,6 +148,111 @@ while True:
                     print(str(response))
             else:
                 print("Please provide a player to unban.")
+        except(NameError):
+            print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
+        except:
+            logging.exception("Error")
+
+    if event == "-BTN-PROMOTE-":
+        try:
+            if len(values["-PLAYER-ID-"]) > 0:   
+                response = rcon.send_command("/promote " + str(values["-PLAYER-ID-"]))
+                if response == None:
+                   print("Sucessfully promoted " + str(values["-PLAYER-ID-"])) 
+                else:
+                    print(str(response))
+            else:
+                print("Please provide a player to promote.")
+        except(NameError):
+            print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
+        except:
+            logging.exception("Error")
+
+    if event == "-BTN-DEMOTE-":
+        try:
+            if len(values["-PLAYER-ID-"]) > 0:   
+                response = rcon.send_command("/demote " + str(values["-PLAYER-ID-"]))
+                if response == None:
+                   print("Sucessfully demoted " + str(values["-PLAYER-ID-"])) 
+                else:
+                    print(str(response))
+            else:
+                print("Please provide a player to demote.")
+        except(NameError):
+            print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
+        except:
+            logging.exception("Error")
+
+    if event == "-BTN-MUTE-":
+        try:
+            if len(values["-PLAYER-ID-"]) > 0:   
+                response = rcon.send_command("/mute " + str(values["-PLAYER-ID-"]))
+                if response == None:
+                   print("Sucessfully muted " + str(values["-PLAYER-ID-"])) 
+                else:
+                    print(str(response))
+            else:
+                print("Please provide a player to mute.")
+        except(NameError):
+            print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
+        except:
+            logging.exception("Error")
+
+    if event == "-BTN-UNMUTE-":
+        try:
+            if len(values["-PLAYER-ID-"]) > 0:   
+                response = rcon.send_command("/unmute " + str(values["-PLAYER-ID-"]))
+                if response == None:
+                   print("Sucessfully unmuted " + str(values["-PLAYER-ID-"])) 
+                else:
+                    print(str(response))
+            else:
+                print("Please provide a player to unmute.")
+        except(NameError):
+            print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
+        except:
+            logging.exception("Error")
+
+    if event == "-BTN-IGNORE-":
+        try:
+            if len(values["-PLAYER-ID-"]) > 0:   
+                response = rcon.send_command("/ignore " + str(values["-PLAYER-ID-"]))
+                if response == None:
+                   print("Sucessfully ignored " + str(values["-PLAYER-ID-"])) 
+                else:
+                    print(str(response))
+            else:
+                print("Please provide a player to ignore.")
+        except(NameError):
+            print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
+        except:
+            logging.exception("Error")
+
+    if event == "-BTN-UNIGNORE-":
+        try:
+            if len(values["-PLAYER-ID-"]) > 0:   
+                response = rcon.send_command("/unignore " + str(values["-PLAYER-ID-"]))
+                if response == None:
+                   print("Sucessfully ignored " + str(values["-PLAYER-ID-"])) 
+                else:
+                    print(str(response))
+            else:
+                print("Please provide a player to unignore.")
+        except(NameError):
+            print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
+        except:
+            logging.exception("Error")
+
+    if event == "-BTN-PURGE-":
+        try:
+            if len(values["-PLAYER-ID-"]) > 0:   
+                response = rcon.send_command("/purge " + str(values["-PLAYER-ID-"]))
+                if response == None:
+                   print("Sucessfully purged " + str(values["-PLAYER-ID-"])) 
+                else:
+                    print(str(response))
+            else:
+                print("Please provide a player to purge.")
         except(NameError):
             print("Unable to handle this command.Please verify that there is an open connection to RCON and that your server is running.")
         except:
