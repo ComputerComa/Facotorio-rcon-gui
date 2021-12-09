@@ -1,1 +1,0 @@
-[[sg.Text(text="Player: "), sg.InputText(size=(15, None), tooltip="Name of the Player to kick", key="-KICK-NAME-"), sg.Button(button_text="Kick", key="-BTN-KICK-PLAYER-")]]
