@@ -12,6 +12,10 @@
     - Player Kick / Ban
 
 ### Planned Features
+- [ ] Dedicated Admin Page
+  - [ ] Kick
+  - [ ] Ban
+  - [ ] Unban
 - [ ] Whitelist
   - [ ] Enable / Disable
   - [ ] Manage players 
