@@ -7,4 +7,5 @@ Welcome to Factorio RCON GUI's documentation!
 =============================================
 
 .. toctree::
-   getting_started.md
+   getting_started.rst
+   connection_settings.rst

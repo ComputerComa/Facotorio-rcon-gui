@@ -19,6 +19,7 @@ Main Interface
 --------------
 
 The Main interface consists of five sections.
+
 * Connection Settings
 * Quick Commands
 * Admin Commands
