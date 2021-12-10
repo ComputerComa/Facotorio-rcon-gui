@@ -7,17 +7,4 @@ Welcome to Factorio RCON GUI's documentation!
 =============================================
 
 .. toctree::
-
-getting_started.md
-
-   
-   
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   getting_started.md
