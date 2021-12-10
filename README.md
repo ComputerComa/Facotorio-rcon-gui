@@ -2,14 +2,7 @@
 #### A GUI for Factorio's Dedicated Server RCON Console
 
 ### Current Features:
-- Easy Server Connection-
-- Subset of Commonly used commands including
-    - Player Listing
-    - Admin List
-    - Server Save
-    - Server Stop
-
-### Planned Features
+- Easy Server Connection
 - [X] Dedicated Admin Commands
   - [X] Kick
   - [X] Ban / Unban
@@ -18,6 +11,13 @@
   - [X] Mute / Unmute
   - [X] ignore / Unignore
   - [X] Promote / Demote
+- Subset of Commonly used commands including
+    - [X] Player Listing
+    - [X] Admin List
+    - [X] Server Save
+    - [X] Server Stop
+
+### Planned Features
 - [ ] Whitelist
   - [ ] Enable / Disable
   - [ ] Manage players 
