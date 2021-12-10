@@ -8,20 +8,22 @@
     - Admin List
     - Server Save
     - Server Stop
-- Features Still in progress
-    - Player Kick / Ban
 
 ### Planned Features
-- [ ] Dedicated Admin Page
-  - [ ] Kick
-  - [ ] Ban
-  - [ ] Unban
+- [X] Dedicated Admin Commands
+  - [X] Kick
+  - [X] Ban / Unban
+  - [X] Unban
+  - [X] Purge
+  - [X] Mute / Unmute
+  - [X] ignore / Unignore
+  - [X] Promote / Demote
 - [ ] Whitelist
   - [ ] Enable / Disable
   - [ ] Manage players 
-- [ ] Cheat Commands Page
+- [X] Cheat Commands Page (Not implemeting right now)
 - [ ] (POSSIBLE) - Chat output from Factorio
-- [ ] Server Info page
+- [X] Server Info (Shows when first connecting to a server)
 
 ### Screenshots 
-![image](https://user-images.githubusercontent.com/68386555/145292484-3074191b-87d8-4d04-af8f-a2ac5ce8e56e.png)
+![image](https://user-images.githubusercontent.com/68386555/145589302-48f65f53-7240-4026-8291-d7ce85c5cf0f.png)
