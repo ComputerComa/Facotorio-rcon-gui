@@ -10,9 +10,11 @@ Downloading and running
     Once it has downloaded double click to run the file.
     You might get a warning about running an unknown executable that looks like this:
     
-     .. image:: https://raw.githubusercontent.com/ComputerComa/Facotorio-rcon-gui/main/docs/Unrecognized_APP.png
+     .. image:: https://raw.githubusercontent.com/ComputerComa/Facotorio-rcon-gui/main/docs/src/img/Unrecognized_APP.png
 
     Click on more info and Click Run Anyway. I haven't gotten around to signing the executable yet.
+
+    .. image:: https://raw.githubusercontent.com/ComputerComa/Facotorio-rcon-gui/main/docs/src/img/Unrecognized_APP_Run_Anyway.png ` _ 
 
 
 Main Interface
