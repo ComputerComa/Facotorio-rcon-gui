@@ -14,7 +14,7 @@ Downloading and running
 
     Click on more info and Click Run Anyway. I haven't gotten around to signing the executable yet.
 
-    .. image:: https://raw.githubusercontent.com/ComputerComa/Facotorio-rcon-gui/main/docs/src/img/Unrecognized_APP_Run_Anyway.png ` _ 
+    .. image:: https://raw.githubusercontent.com/ComputerComa/Facotorio-rcon-gui/main/docs/src/img/Unrecognized_APP_Run_Anyway.png 
 
 
 Main Interface
