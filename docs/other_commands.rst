@@ -7,9 +7,9 @@ This section you canr use to run other commands not listed and send chats as the
 
 Fields
 ------
-    ### Command:
+    - Command:
         - Execute a command on the server.
-    ### Chat
+    - Chat
         - Send a chat as the server.
 
 
