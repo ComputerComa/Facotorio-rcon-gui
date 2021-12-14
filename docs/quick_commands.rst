@@ -2,7 +2,7 @@ Quick Commands
 ================
 
 
-.. image:: https://github.com/ComputerComa/Facotorio-rcon-gui/blob/main/docs/src/img/quick_Ccmmands.png
+.. image:: https://raw.githubusercontent.com/ComputerComa/Facotorio-rcon-gui/main/docs/src/img/quick_commands.png
 
 This area has a set of general commands that are used in server administration.
 These buttons include:
