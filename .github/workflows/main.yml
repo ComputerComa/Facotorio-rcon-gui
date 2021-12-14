@@ -1,4 +1,4 @@
-name: Build GUI exe with Pyinstaller
+name: Build
 
 on:
   workflow_dispatch:
