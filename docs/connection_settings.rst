@@ -6,14 +6,14 @@ Connection Settings
 
 This area is used to set the parameters for the RCON connection and to connect / disconnect from the server.
 
-Fields:
+Fields
 -------
 
 - IP: The IP of your Factorio server
 - PORT: The RCON port for your server. You can leave this untouched unless you have changed the default RCON port
 - PASSWORD: Your RCON password.
 
-Buttons:
+Buttons
 --------
 
 - Connect: Connect to the RCON server using the values entered.
