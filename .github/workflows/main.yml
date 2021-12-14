@@ -1,10 +1,12 @@
-name: Build
+name: Package Application with Pyinstaller
 
 on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
   workflow_dispatch:
-    inputs:
-      tags:
-        description: 'test build tags'
+
 jobs:
   build:
 
@@ -16,9 +18,9 @@ jobs:
     - name: Package Application
       uses: JackMcKew/pyinstaller-action-windows@main
       with:
-        path: .
+        path: src
 
     - uses: actions/upload-artifact@v2
       with:
-        name: main
-        path: /
+        name: name-of-artifact
+        path: src/dist/windows
