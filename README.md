@@ -2,6 +2,11 @@
 
 A GUI for Factorio's Dedicated Server RCON Console
 
+
+Build Statuses
+--------------
+[![Build GUI exe with Pyinstaller](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/main.yml/badge.svg)](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/main.yml)
+
 ## Features
 
 ### Current Features
@@ -33,3 +38,7 @@ A GUI for Factorio's Dedicated Server RCON Console
 ### Screenshots
 
 ![image](https://user-images.githubusercontent.com/68386555/145589302-48f65f53-7240-4026-8291-d7ce85c5cf0f.png)
+
+
+
+
