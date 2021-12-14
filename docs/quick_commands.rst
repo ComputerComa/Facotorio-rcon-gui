@@ -17,7 +17,7 @@ Use this to list the current Admins on the server.
 
 Server Save
 -----------
-Use this to request a Server side save. 
+Use this to request a Server side save.
 
 Stop Server
 -----------
