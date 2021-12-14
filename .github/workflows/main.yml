@@ -20,5 +20,5 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: my-app
-        path: dist/windows
+        name: main
+        path: /
