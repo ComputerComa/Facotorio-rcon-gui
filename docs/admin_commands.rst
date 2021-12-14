@@ -1,5 +1,5 @@
 Admin Commands
-================
+==============
 
  .. image:: https://raw.githubusercontent.com/ComputerComa/Facotorio-rcon-gui/main/docs/src/img/Admin_Commands.png
 
