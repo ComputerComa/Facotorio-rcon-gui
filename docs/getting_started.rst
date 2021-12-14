@@ -20,7 +20,7 @@ Downloading and running
 Main Interface
 --------------
 
-The Main interface consists of five sections.
+The Main interface consists of five areas.
 
 * Connection Settings
 * Quick Commands
