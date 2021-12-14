@@ -5,7 +5,7 @@ A GUI for Factorio's Dedicated Server RCON Console
 
 Build Statuses
 --------------
-[![Build](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/main.yml/badge.svg)](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/main.yml)
+[![Build](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/main.yml/badge.svg)](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/main.yml) ![GitHub all releases](https://img.shields.io/github/downloads/ComputerComa/Facotorio-rcon-gui/total?style=plastic)
 
 ## Features
 
