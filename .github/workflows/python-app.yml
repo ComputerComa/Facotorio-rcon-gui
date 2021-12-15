@@ -34,10 +34,15 @@ jobs:
       run: |
         pyinstaller --onefile main.py
         
-    - name: Upload Artifact
+    - name: Upload Dev Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: main
-        path: src/dist/
+        name: main-dev
+        path: src/dist
+    - name: Upload Release Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: main-stable
+        path: src/dist
   
     

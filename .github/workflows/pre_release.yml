@@ -2,9 +2,8 @@ name: "pre-release"
 
 on:
   push:
-    tags-ignore:
-      - v*
-      - V*
+    tags:
+      - rc*
 
 jobs:
   build:
@@ -17,13 +16,13 @@ jobs:
     steps:
       - uses: actions/download-artifact@v2
         with:
-          name: main
+          name: main-dev
       - name: Display structure of downloaded files
         run: ls -R
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
+          automatic_release_tag: "nightly"
           prerelease: true
           title: "Dev Build"
           files: |
