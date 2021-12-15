@@ -9,6 +9,9 @@ Build Statuses
 
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ComputerComa/Facotorio-rcon-gui?color=yellow&include_prereleases&label=pre-release&logo=github%20actions)  ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ComputerComa/Facotorio-rcon-gui?color=green&label=latest&logo=github%20actions)
+<hr>
+[![pre-release](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/pre_release.yml/badge.svg)](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/pre_release.yml)   [![tagged-release](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/tagged-release.yml/badge.svg)](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/tagged-release.yml)
+
 ## Features
 
 ### Current Features
