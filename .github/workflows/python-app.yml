@@ -8,6 +8,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_call:
+
 
 jobs:
   build:
@@ -41,20 +43,5 @@ jobs:
       with:
         name: main
         path: src/dist/
-        
-  pre-release:
-    name: "Pre Release"
-    runs-on: "ubuntu-latest"
-    needs: build
-
-    steps:
-      
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
-          files: |
-            *.exe
+  
     
