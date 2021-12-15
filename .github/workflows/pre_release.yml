@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: ComputerComa/Facotorio-rcon-gui/blob/24c6de52e9eb3ff32b2c4832c32d184a938756f7/.github/workflows/python-app.yml@main
+    uses: ComputerComa/Facotorio-rcon-gui/.github/workflows/python-app.yml@main
   pre-release:
     name: "Pre Release"
     runs-on: "ubuntu-latest"
