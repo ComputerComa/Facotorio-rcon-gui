@@ -12,7 +12,7 @@ Build Statuses
 <hr>
 [![pre-release](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/pre_release.yml/badge.svg)](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/pre_release.yml)   [![tagged-release](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/tagged-release.yml/badge.svg)](https://github.com/ComputerComa/Facotorio-rcon-gui/actions/workflows/tagged-release.yml)
 
-## Features list
+## Features
 
 ### Current Features
 
