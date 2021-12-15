@@ -1,4 +1,4 @@
-version = "2.2"
+version = "2.0.0"
 import logging
 from os import error
 from types import NoneType
