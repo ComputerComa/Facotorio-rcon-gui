@@ -10,7 +10,7 @@ jobs:
   build:
     uses: ComputerComa/Facotorio-rcon-gui/.github/workflows/python-app.yml@main
   pre-release:
-    name: "Pre Release"
+    name: "Tagged Release"
     runs-on: "ubuntu-latest"
     needs: build
 
