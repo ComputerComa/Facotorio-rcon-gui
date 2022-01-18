@@ -32,7 +32,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Package with pyinstaller
       run: |
-        pyinstaller -clean main.py
+        pyinstaller --clean main.py
         
     - name: Upload Dev Artifact
       uses: actions/upload-artifact@v2
