@@ -1,6 +1,5 @@
 version = "2.1.0"
 import logging
-
 from os import error
 from types import NoneType
 from typing import ValuesView
