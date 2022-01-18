@@ -8,6 +8,7 @@ from construct import debug
 import factorio_rcon
 import PySimpleGUI as sg
 from factorio_rcon.factorio_rcon import RCONConnectError, RCONNetworkError
+#Change This Comment For Dummy Commits
 def rconcreate(IP_ADDR: str, SRV_PORT: int, SRV_Password: str) -> factorio_rcon.RCONClient:
     "Create the RCON connection"
     client = factorio_rcon.RCONClient(IP_ADDR, SRV_PORT, SRV_Password)
@@ -266,4 +267,5 @@ while True:
         except:
             break
         break
+
 
